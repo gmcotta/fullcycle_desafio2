@@ -18,5 +18,7 @@ RUN ln -s public html
 RUN usermod -u 1000 www-data
 USER www-data
 
+# COPY . /var/www
+
 EXPOSE 9000
 # ENTRYPOINT ["php-fpm"]
